@@ -88,8 +88,9 @@ if __name__ == '__main__':
     # subscriber of the turtle position, callback to cb_pose
     
     ## init each service server here:
-    rospy.Service("set_orientaion", SetOrientation, cb_orientation)	# callback to cb_orientation
-    rospy.Service("walkdistance", WalkDistance, cb_walk)		# callback to cb_walk
+    # callback to cb_orientation
+    rospy.Service("set_orientation", SetOrientation, cb_orientation)
+    rospy.Service("walk_distance", WalkDistance, cb_walk)		# callback to cb_walk
     
     rospy.spin()
 
